@@ -2,7 +2,7 @@ import json
 from time import sleep
 
 
-def register(dictionary):
+def register() -> None:
   username= input("Enter your username: ")
   while len(username)<=7:
     print("Your username should be atleast of 8 digits")
@@ -25,7 +25,7 @@ def register(dictionary):
 
 
 
-def login(dictionary):
+def login() -> None:
   username = input("Enter your username: ")
   while username not in u_p:
       print("Username not found")
@@ -39,7 +39,7 @@ def login(dictionary):
 
 
 
-def change_password(dictionary):
+def change_password() -> None:
   username = input("Enter your username: ")
   while username not in u_p:
       print("Username not found")
@@ -70,14 +70,14 @@ choice1=None
 while choice1 != "q":
   choice1= input("1. Regster\n2. Login\n3. Change password\nq to qu ")
   if choice1=="1":
-    register(u_p)
+    register()
 
   elif choice1=="2":
-    login(u_p)
+    login()
       
         
   elif choice1=="3":
-    change_password(u_p)
+    change_password()
 
   elif choice1=="q":
     break
