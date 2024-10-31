@@ -68,7 +68,7 @@ sleep(3)
 choice1=None
 
 while choice1 != "q":
-  choice1= input("1. Regster\n2. Login\n3. Change password\nq to qu ")
+  choice1= input("1. Regster\n2. Login\n3. Change password\nq to quit: ")
   if choice1=="1":
     register()
 
